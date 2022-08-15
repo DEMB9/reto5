@@ -18,6 +18,7 @@ public class frmTercerInforme extends javax.swing.JFrame {
     
     public frmTercerInforme() {
         initComponents();
+        setLocationRelativeTo(null);
         
         
         modelo.addColumn("ID_Compra");
@@ -92,7 +93,9 @@ public class frmTercerInforme extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dispose();
         new frmPrincipal().setVisible(true);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton1ActionPerformed
 
    

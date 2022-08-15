@@ -17,6 +17,7 @@ public class frmSegundoInforme extends javax.swing.JFrame {
     DefaultTableModel modelo = new DefaultTableModel();
     public frmSegundoInforme() {
         initComponents();
+        setLocationRelativeTo(null);
         
         //colocar encabezados
         modelo.addColumn("ID_proyecto");
@@ -56,7 +57,7 @@ public class frmSegundoInforme extends javax.swing.JFrame {
         jTable1.setModel(modelo);
         jScrollPane1.setViewportView(jTable1);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Regresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -93,7 +94,9 @@ public class frmSegundoInforme extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       new frmPrincipal().setVisible(true);
+       dispose();
+        new frmPrincipal().setVisible(true);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

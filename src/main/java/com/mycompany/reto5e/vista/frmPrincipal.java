@@ -18,6 +18,7 @@ public class frmPrincipal extends javax.swing.JFrame {
      */
     public frmPrincipal() {
         initComponents();
+        setLocationRelativeTo(null);
         this.setTitle("Reporte de informes Ministerio");
     }
 
@@ -85,7 +86,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnPrimerInformeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPrimerInformeActionPerformed
+        
         try {
+            setLocationRelativeTo(null);
+            dispose();
             new frmPrimerInforme().setVisible(true);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(frmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
@@ -93,11 +97,16 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnPrimerInformeActionPerformed
 
     private void BtnSegundoInformeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSegundoInformeActionPerformed
+        setLocationRelativeTo(null);
+        dispose();
         new frmSegundoInforme().setVisible(true);
     }//GEN-LAST:event_BtnSegundoInformeActionPerformed
 
     private void BtnTercerInformeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTercerInformeActionPerformed
+        
+        dispose();
         new frmTercerInforme().setVisible(true);
+        setLocationRelativeTo(null);
     }//GEN-LAST:event_BtnTercerInformeActionPerformed
 
     /**
